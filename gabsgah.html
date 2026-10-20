@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Σέμπρικο – Εκλεκτή κουζίνα στη Θεσσαλονίκη</title>
+<meta name="description" content="Σέμπρικο, Φράγκων 2, Θεσσαλονίκη. Εκλεκτή κουζίνα, εξωτερικός χώρος και παιδικό μενού. Κρατήσεις στο 231 055 7513.">
+<meta property="og:title" content="Σέμπρικο – Θεσσαλονίκη">
+<meta property="og:description" content="Εκλεκτή κουζίνα στη Φράγκων 2. Απαιτούνται κρατήσεις.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Literata:opsz,wght@7..72,500;7..72,800&display=swap&subset=greek" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Σέμπρικο","telephone":"+302310557513","priceRange":"€15–35","address":{"@type":"PostalAddress","streetAddress":"Φράγκων 2","addressLocality":"Θεσσαλονίκη","postalCode":"546 26","addressCountry":"GR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"4549"},"acceptsReservations":true}
+</script>
+<style>
+:root{
+  --bg:#ECEEE9; --ink:#17231F; --green:#1F3A33; --gold:#B8851F; --muted:#56635D; --line:#C9CEC6; --on-green:#F1F3EE;
+  --display:"Literata",Georgia,"Times New Roman",serif;
+  --body:"Commissioner","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121B18; --ink:#E9ECE6; --green:#0B1311; --gold:#E0B24A; --muted:#9FAAA3; --line:#2B3A35; --on-green:#E9ECE6}
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+
+/* Hero */
+.hero{background:var(--green);color:var(--on-green);padding:clamp(2rem,6vw,4rem) 0 clamp(2.5rem,7vw,5rem)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-weight:500}
+.top a{text-decoration:none}
+.top a:hover{text-decoration:underline}
+h1{font:800 clamp(3.5rem,17vw,10.5rem)/.95 var(--display);letter-spacing:-.03em;margin:clamp(3rem,10vw,6rem) 0 1.25rem}
+.lead{max-width:34rem;font-size:clamp(1.15rem,2.4vw,1.4rem);margin:0 0 2rem;color:var(--on-green);opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.btn{display:inline-block;padding:.9rem 1.5rem;border-radius:.4rem;background:var(--gold);color:#17231F;font-weight:600;text-decoration:none;border:2px solid var(--gold)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--on-green);border-color:currentColor}
+.rating{margin-top:2rem;font-size:.98rem;opacity:.9}
+.rating strong{font:800 1.5rem var(--display);margin-right:.35rem}
+
+/* Sections */
+section{padding:clamp(2.5rem,7vw,4.5rem) 0}
+h2{font:800 clamp(1.8rem,4.5vw,2.6rem)/1.15 var(--display);letter-spacing:-.01em;margin:0 0 1.5rem}
+.split{display:grid;gap:2.5rem}
+@media(min-width:800px){.split{grid-template-columns:1fr 1fr;gap:4rem}}
+
+/* Menu */
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:flex;align-items:baseline;gap:.6rem;padding:.7rem 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+.menu small{color:var(--muted);font-size:.92rem;margin-left:auto;text-align:right}
+.note{color:var(--muted);margin-top:1rem}
+
+/* Info */
+.facts{list-style:none;padding:0;margin:0 0 2rem;display:grid;gap:.5rem}
+.facts li::before{content:"✓";color:var(--gold);font-weight:700;margin-right:.6rem}
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;padding:.55rem 0;border-bottom:1px solid var(--line);font-weight:400}
+td{text-align:right;font-variant-numeric:tabular-nums}
+address{font-style:normal;margin-bottom:1rem}
+.map{width:100%;height:340px;border:0;border-radius:.4rem;margin-top:1.25rem;filter:saturate(.85)}
+
+/* Reservation band */
+.band{background:var(--green);color:var(--on-green);text-align:center}
+.band h2{margin-bottom:.75rem}
+.band p{margin:0 auto 1.75rem;max-width:32rem;opacity:.92}
+.phone{display:block;font:800 clamp(2rem,8vw,3.5rem) var(--display);text-decoration:none;margin-bottom:1.5rem}
+footer{padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.92rem}
+
+/* One entrance moment */
+@media(prefers-reduced-motion:no-preference){
+  h1{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <span>Θεσσαλονίκη</span>
+      <a href="tel:+302310557513">231 055 7513</a>
+    </div>
+    <h1>Σέμπρικο</h1>
+    <p class="lead">Εκλεκτή κουζίνα στη Φράγκων 2. Τραπέζι εσωτερικά ή έξω, με παιδικό μενού για τους μικρούς σας φίλους.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+302310557513">Κάντε κράτηση</a>
+      <a class="btn ghost" href="#menu">Δείτε τα αγαπημένα</a>
+    </div>
+    <p class="rating"><strong>4,5</strong> από 4.549 κριτικές στο Google · 15–35 € ανά άτομο</p>
+  </div>
+</header>
+
+<main>
+  <section id="menu">
+    <div class="wrap split">
+      <div>
+        <h2>Τα πιάτα που ξεχωρίζουν</h2>
+        <p class="note">Τα πιο δημοφιλή πιάτα, όπως τα επιλέγουν οι επισκέπτες μας.</p>
+      </div>
+      <ul class="menu">
+        <li>Πατατοσαλάτα</li>
+        <li>Πίτα Σφακιανή</li>
+        <li>Grilled Pork Steak Tomahawk</li>
+        <li>Μπιφτέκι Black Angus <small>με baby potatoes</small></li>
+        <li>Νιόκι</li>
+        <li>Λουκάνικο</li>
+        <li>Ποικιλία τυριών</li>
+        <li>Σοκολάτα <small>επιδόρπιο</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="info" style="padding-top:0">
+    <div class="wrap split">
+      <div>
+        <h2>Πριν έρθετε</h2>
+        <ul class="facts">
+          <li>Απαιτούνται κρατήσεις</li>
+          <li>Θέσεις σε εξωτερικό χώρο</li>
+          <li>Παιδικό μενού</li>
+        </ul>
+        <address>Φράγκων 2<br>Θεσσαλονίκη 546 26</address>
+        <a href="https://www.google.com/maps/search/?api=1&query=%CE%A3%CE%AD%CE%BC%CF%80%CF%81%CE%B9%CE%BA%CE%BF+%CE%A6%CF%81%CE%AC%CE%B3%CE%BA%CF%89%CE%BD+2+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7" rel="noopener">Οδηγίες στο Google Maps</a>
+        <iframe class="map" title="Χάρτης: Σέμπρικο, Φράγκων 2, Θεσσαλονίκη" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=%CE%A3%CE%AD%CE%BC%CF%80%CF%81%CE%B9%CE%BA%CE%BF+%CE%A6%CF%81%CE%AC%CE%B3%CE%BA%CF%89%CE%BD+2+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed"></iframe>
+      </div>
+      <div>
+        <h2>Ώρες λειτουργίας</h2>
+        <table>
+          <tr><th scope="row">Δευτέρα – Παρασκευή</th><td>08:30 – 00:00</td></tr>
+          <tr><th scope="row">Σάββατο – Κυριακή</th><td>09:00 – 00:00</td></tr>
+        </table>
+        <p class="note">Οι επισκέπτες μένουν συνήθως 1,5 έως 2,5 ώρες.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="reservations">
+    <div class="wrap">
+      <h2>Κλείστε το τραπέζι σας</h2>
+      <p>Οι κρατήσεις γίνονται τηλεφωνικά. Πείτε μας ημέρα, ώρα και πόσα άτομα θα είστε.</p>
+      <a class="phone" href="tel:+302310557513">231 055 7513</a>
+      <a class="btn" href="tel:+302310557513">Καλέστε τώρα</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© Σέμπρικο · Φράγκων 2, Θεσσαλονίκη 546 26</div>
+</footer>
+
+</body>
+</html>
